@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!--Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8"> <!--	Specifies the character encoding for the HTML document -->
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<!--CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="minesweeper.css">
+
+<!--JAVASCRIPT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="test.js"></script>
+  </head>
+
+<!--Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <body>
+
+<!--DISPLAY PORT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<input id="display">
+
+<!-- EQUALS BUTTON
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<button id="equals" onclick="equals()">=</button>
+
+<!-- OPERATOR BUTTONS: + - / *
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<button id="add" onclick="add()">+</button>
+<button id="subtract" onclick="subtract()">-</button>
+<button id="multiply" onclick="multiply()">x</button>
+<button id="divide" onclick="divide()">/</button>
+
+<!--NUMBER BUTTONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<button id="one" onclick="one()">1</button>
+<button id="two" onclick="two()">2</button>
+<button id="three" onclick="three()">3</button>
+<button id="four" onclick="four()">4</button>
+<button id="five" onclick="five()">5</button>
+<button id="six" onclick="six()">6</button>
+<button id="seven" onclick="seven()">7</button>
+<button id="eight" onclick="eight()">8</button>
+<button id="nine" onclick="nine()">9</button>
+
+<!--CLEAR BUTTON
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<button id="clear" onclick="clear()">AC</button>
+
+<!--DECIMAL BUTTON
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<button id="decimal" onclick="decimal()">.</button>
+
+
+
+
+
+
+  </body>
+</html>
