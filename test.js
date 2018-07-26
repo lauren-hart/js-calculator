@@ -1,30 +1,7 @@
 
-//EQUALS FUNCTION ---------------------------------------
+// SHOW THE BUTTON PUSHED ON THE INPUT SCREEN
 
-function equals () {
-
+function pressButton () {
+    document.getElementById("display").innerHTML = "1";
 }
 
-//ADD FUNCTION ---------------------------------------
-
-function add () {
-
-}
-
-//SUBTRACT FUNCTION ---------------------------------------
-
-function subtract () {
-
-}
-
-//MULTIPLY FUNCTION ---------------------------------------
-
-function multiply () {
-
-}
-
-//DIVIDE FUNCTION ---------------------------------------
-
-function divide () {
-
-}
