@@ -17,7 +17,7 @@
 
 <!--Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
 
 <!--CSS/BOOTSTRAP
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,29 +33,38 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <body>
 
+<!--HEADER 
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<header>lauren's calculator</header>
+
+
+      <div class="calculator">
+
+
 <!--DISPLAY PORT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
             <input id="display">
+        </div>
     </div>
-</div>
 
 
 <!-- FIRST LINE CALCULATOR
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<div class ="container">
-    <div class="row">
-        <div class="col-3">
-            <button id="seven" onclick="seven()">7</button>
-            <button id="eight" onclick="eight()">8</button>
-            <button id="nine" onclick="nine()">9</button>
-            <button id="add" onclick="add()">+</button>
+    <div class ="container">
+        <div class="row">
+            <div class="col-3">
+                <button id="seven" onclick="seven()">7</button>
+                <button id="eight" onclick="eight()">8</button>
+                <button id="nine" onclick="nine()">9</button>
+                <button id="add" onclick="add()">+</button>
+            </div>
         </div>
     </div>
-</div>
 
 
 
@@ -108,10 +117,13 @@
 <div class ="container">
         <div class="row">
             <div class="col-2">
-                <button id="clear" onclick="clear()">AC</button>
+                <div class="clear-button">
+                    <button id="clear" onclick="clear()">AC</button>
+                </div>
             </div>
         </div>
     </div>
 
+    </div>
   </body>
 </html>
