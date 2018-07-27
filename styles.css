@@ -2,7 +2,7 @@
 */
 
 * { 
-    outline: 1px solid #947676 !important; 
+    outline: 1px transparent #947676 !important; 
     } 
     
     * { 
@@ -74,10 +74,10 @@ input {
 p {
     background: white;
     padding: 4% 6% 4% 0;
-    margin: 5%;
+    margin: 10% 7%;
     font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
-    height: 50px;
+    height: 56px;
 }
 

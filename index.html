@@ -27,6 +27,8 @@
 <!--JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="test.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
 
 <!--Primary Page Layout
@@ -47,7 +49,7 @@
 
     <div class="container">
         <div class="row">
-            <p id="display"></p>
+            <p class="display"></p>
         </div>
     </div>
 
@@ -58,10 +60,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                <button id="seven" onclick="seven()">7</button>
-                <button id="eight" onclick="eight()">8</button>
-                <button id="nine" onclick="nine()">9</button>
-                <button id="add" onclick="add()">+</button>
+                <button onclick ="pressButton()" class="number">7</button>
+                <button onclick ="pressButton()" class="number">8</button>
+                <button onclick ="pressButton()" class="number">9</button>
+                <button onclick ="pressButton()" class="number">+</button>
             </div>
         </div>
     </div>
@@ -75,10 +77,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                <button id="four" onclick="pressButton()">4</button>
-                <button id="five" onclick="pressButton()">5</button>
-                <button id="six" onclick="pressButton()">6</button>
-                <button id="subtract" onclick="pressButton()">-</button>
+                <button onclick ="pressButton()" class="number">4</button>
+                <button onclick ="pressButton()" class="number">5</button>
+                <button onclick ="pressButton()" class="number">6</button>
+                <button onclick ="pressButton()" class="number">-</button>
             </div>
         </div>
     </div>
@@ -89,10 +91,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                <button id="one" onclick="pressButton()">1</button>
-                <button id="two" onclick="pressButton()">2</button>
-                <button id="three" onclick="pressButton()">3</button>
-                <button id="multiply" onclick="pressButton()">x</button>
+                <button onclick ="pressButton()" class="number">1</button>
+                <button onclick ="pressButton()" class="number">2</button>
+                <button onclick ="pressButton()" class="number">3</button>
+                <button onclick ="pressButton()" class="number">x</button>
             </div>
         </div>
     </div>
@@ -103,10 +105,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                <button id="zero" onclick="pressButton()">0</button>
-                <button id="decimal" onclick="pressButton()">.</button>
-                <button id="equals" onclick="pressButton()">=</button>
-                <button id="divide" onclick="pressButton()">/</button>
+                <button onclick ="pressButton()" class="number">0</button>
+                <button onclick ="pressButton()" class="number">.</button>
+                <button onclick ="pressButton()" class="number">=</button>
+                <button onclick ="pressButton()" class="number">/</button>
             </div>
         </div>
     </div>
@@ -118,7 +120,7 @@
         <div class="row">
             <div class="col-2">
                 <div class="clear-button">
-                    <button id="clear" onclick="clear()">AC</button>
+                    <button onclick ="pressButton()" class="number">AC</button>
                 </div>
             </div>
         </div>
