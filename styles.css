@@ -12,72 +12,59 @@
     box-sizing: border-box; 
     } 
 
-/* FONT FOR CALCULATOR -------------------------
-*/
+    body {
+        text-align: center;
+    }
 
-body {
-    text-align: center;
-}
+    header {
+        margin: 5% 0 0 0;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        background: rgb(216, 228, 230);
+        text-align: center;
+    }
 
-/* HEADER  -------------------------
-*/
+    .calculator {
 
-header {
-    margin: 5% 0 0 0;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    background: rgb(216, 228, 230);
-    text-align: center;
-}
-/* CALCULATOR -------------------------
-*/
+        border: 1px solid rgb(189, 183, 183);
+        height: 100%;
+        width: 40%;
+        background: rgb(216, 228, 230);
+        display: inline-block; 
+        margin: 5% 0;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+    }
 
-.calculator {
+    .row {
+        margin: 2% 0;
+    }
 
-    border: 1px solid rgb(189, 183, 183);
-    height: 100%;
-    width: 30%;
-    background: rgb(216, 228, 230);
-    display: inline-block; 
-    margin: 5% 0;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-}
+ 
 
-.row {
-    margin: 2% 0;
-}
+    input[type=button] {
+        background: rgb(10, 4, 66);
+        color: white;
+        padding: 2%;
+        margin: 1% 0 0 0;
+        font-size: 30px;
+        width: 20%;
+    }
 
-button {
-    background: rgb(10, 4, 66);
-    color: white;
-    padding: 2%;
-    margin: 1% 0 0 0;
-    font-size: 30px;
-    width: 20%;
-}
+    input[type=button].clear {
+    
+        width: 30%;
+        float: left;
+        margin: 3% 0 3% 7%;
+ 
+    }
 
-.clear-button button{
-    width: 40%;
-    float: left;
-    margin: 1% 0 4% 8%;
-}
 
-input {
-    margin: 5% 10%;
-    width: 80%;
-    padding: 15px;
-    font-size: 18px;
-}
-
-p {
-    background: white;
-    padding: 4% 6% 4% 0;
-    margin: 10% 7%;
-    font-size: 35px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: right;
-    height: 56px;
-}
-
+    input[type=text] {
+        padding: 3%;
+        width: 85%;
+        margin: 3% 0;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+    }

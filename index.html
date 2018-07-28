@@ -40,8 +40,7 @@
 
 <header>lauren's calculator</header>
 
-
-      <div class="calculator">
+      <form class="calculator">
 
 
 <!--DISPLAY PORT
@@ -49,7 +48,7 @@
 
     <div class="container">
         <div class="row">
-            <p class="display"></p>
+            <input type="text" value="" id ="displayScreen">
         </div>
     </div>
 
@@ -59,11 +58,13 @@
 
     <div class ="container">
         <div class="row">
-            <div class="col-3">
-                <button onclick ="pressButton()" class="number">7</button>
-                <button onclick ="pressButton()" class="number">8</button>
-                <button onclick ="pressButton()" class="number">9</button>
-                <button onclick ="pressButton()" class="number">+</button>
+            <div class="buttons">
+                <div class="col-3">
+                    <input type="button" value="7" onclick="display(7)" class="number">
+                    <input type="button" value="8" onclick="display(8)" class="number">
+                    <input type="button" value="9" onclick="display(9)" class="number">
+                    <input type="button" value="+" onclick="display('+')" class="operator">
+                </div>
             </div>
         </div>
     </div>
@@ -77,10 +78,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                <button onclick ="pressButton()" class="number">4</button>
-                <button onclick ="pressButton()" class="number">5</button>
-                <button onclick ="pressButton()" class="number">6</button>
-                <button onclick ="pressButton()" class="number">-</button>
+                    <input type="button" value="4" onclick="display(4)" class="number">
+                    <input type="button" value="5" onclick="display(5)" class="number">
+                    <input type="button" value="6" onclick="display(6)" class="number">
+                    <input type="button" value="-" onclick="display('-')" class="operator">
             </div>
         </div>
     </div>
@@ -91,10 +92,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                <button onclick ="pressButton()" class="number">1</button>
-                <button onclick ="pressButton()" class="number">2</button>
-                <button onclick ="pressButton()" class="number">3</button>
-                <button onclick ="pressButton()" class="number">x</button>
+                    <input type="button" value="1" onclick="display(1)" class="number">
+                    <input type="button" value="2" onclick="display(2)" class="number">
+                    <input type="button" value="3" onclick="display(3)" class="number">
+                    <input type="button" value="x" onclick="display('*')" class="operator">
             </div>
         </div>
     </div>
@@ -105,10 +106,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                <button onclick ="pressButton()" class="number">0</button>
-                <button onclick ="pressButton()" class="number">.</button>
-                <button onclick ="pressButton()" class="number">=</button>
-                <button onclick ="pressButton()" class="number">/</button>
+                    <input type="button" value="0" onclick="display(0)" class="number">
+                    <input type="button" value="." onclick="display('.')" class="decimal">
+                    <input type="button" value="=" onclick="display('=')" class="equals">
+                    <input type="button" value="/" onclick="display('/')" class="operator">
             </div>
         </div>
     </div>
@@ -119,13 +120,11 @@
 <div class ="container">
         <div class="row">
             <div class="col-2">
-                <div class="clear-button">
-                    <button onclick ="pressButton()" class="number">AC</button>
-                </div>
+                        <input type="button" value="AC" onclick="clear()" class="clear">
             </div>
         </div>
-    </div>
 
-    </div>
+
+</form>
   </body>
 </html>

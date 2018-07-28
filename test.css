@@ -1,0 +1,83 @@
+/* BOX GRID -------------------------
+*/
+
+* { 
+    outline: 1px solid #947676 !important; 
+    } 
+    
+    * { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+    } 
+
+/* FONT FOR CALCULATOR -------------------------
+*/
+
+body {
+    text-align: center;
+}
+
+/* HEADER  -------------------------
+*/
+
+header {
+    margin: 5% 0 0 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(216, 228, 230);
+    text-align: center;
+}
+/* CALCULATOR -------------------------
+*/
+
+.calculator {
+
+    border: 1px solid rgb(189, 183, 183);
+    height: 100%;
+    width: 30%;
+    background: rgb(216, 228, 230);
+    display: inline-block; 
+    margin: 5% 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.row {
+    margin: 2% 0;
+}
+
+.buttons {
+    background: rgb(10, 4, 66);
+    color: white;
+    padding: 2%;
+    margin: 1% 0 0 0;
+    font-size: 30px;
+    width: 20%;
+}
+
+.clear {
+    width: 40%;
+    float: left;
+    margin: 1% 0 4% 8%;
+}
+
+input {
+    margin: 5% 10%;
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+p {
+    background: white;
+    padding: 4% 6% 4% 0;
+    margin: 10% 7%;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    height: 56px;
+}
+
