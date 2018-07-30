@@ -1,3 +1,5 @@
+
+
 var entries = [];
 var total = 0;
 
@@ -7,8 +9,9 @@ function display (num) {
 
     document.getElementById('displayScreen').value 
     = document.getElementById('displayScreen').value + num
-
+    
 }
+
 
 
 
