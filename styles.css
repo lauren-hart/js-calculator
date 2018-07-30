@@ -55,16 +55,26 @@
     }
 
     input[type=button].clear {
-    
         width: 30%;
         float: left;
         margin: 3% 0 3% 7%;
- 
+        background: rgb(77, 179, 153);
     }
 
 
-    .number {
+    input[type=button].operator {
+        background: rgb(77, 179, 153);
+    }
 
+    input[type=button].equals {
+        background: rgb(77, 179, 153);
+    }
+
+    input[type=button].decimal {
+        background: rgb(77, 179, 153);
+    }
+
+    .number {
         background: rgb(10, 4, 66);
         color: white;
         padding: 2%;
@@ -83,7 +93,12 @@
     padding: 2%;
     border-radius: 10%;
     margin: 5%;
+    text-align: right;
     
 }
 
+input[type=button]:hover {
+    background: grey;
+
+}
     
