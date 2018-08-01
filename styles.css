@@ -29,7 +29,7 @@
 
     /* CALCULATOR LAYOUT */
 
-    .calculator {
+    #calculator {
 
         border: 1px solid rgb(189, 183, 183);
         height: 100%;
@@ -39,7 +39,7 @@
         margin: 8%;
         font-family: 'Ubuntu', sans-serif;
         text-align: center;
-        border-radius: 5%;
+        border-radius: 0%;
     }
 
     .row {
@@ -71,11 +71,13 @@
 
 #displayScreen {
         font-size: 40px;
-        width: 90%;
+        width: 100%;
         background: white;
         font-family: 'Courier New', Courier, monospace;
         border-radius: 0%;
         text-align: right; 
+        border: 5%;
+        padding: 5%;
     }
 
 
