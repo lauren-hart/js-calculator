@@ -41,17 +41,22 @@
 
 <header>lauren's calculator</header>
 
-      <form class="calculator">
+      <div class="calculator">
 
 
-<!--DISPLAY PORT
+<!--DISPLAY PORT - a placeholder specifies a short hint (one 
+    word or a short phrase) that describes the expected value 
+    of the text field. Readonly - you cannot edit text field
+    but you can copy it. 
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="container">
         <div class="row">
-            <input type="text" value="" id ="displayScreen">
+            <div id ="displayScreen">0</div>
         </div>
     </div>
+
+
 
 
 <!-- FIRST LINE CALCULATOR
@@ -59,19 +64,14 @@
 
     <div class ="container">
         <div class="row">
-            <div class="buttons">
-                <div class="col-3">
-                    <input type="button" value="7" onclick="display(7)" class="number">
-                    <input type="button" value="8" onclick="display(8)" class="number">
-                    <input type="button" value="9" onclick="display(9)" class="number">
-                    <input type="button" value="+" onclick="display('+')" class="operator">
-                </div>
+            <div class="col-3">
+                <button onclick="myFunction(this.innerText)">7</button>
+                <button onclick="myFunction(this.innerText)">8</button>
+                <button onclick="myFunction(this.innerText)">9</button>
+                <button onclick="myFunction(this.innerText)">+</button>
             </div>
         </div>
     </div>
-
-
-
 
 <!-- SECOND LINE CALCULATOR
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -79,10 +79,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                    <input type="button" value="4" onclick="display(4)" class="number">
-                    <input type="button" value="5" onclick="display(5)" class="number">
-                    <input type="button" value="6" onclick="display(6)" class="number">
-                    <input type="button" value="-" onclick="display('-')" class="operator">
+                <button onclick="myFunction(this.innerText)">4</button>
+                <button onclick="myFunction(this.innerText)">5</button>
+                <button onclick="myFunction(this.innerText)">6</button>
+                <button onclick="myFunction(this.innerText)">-</button>
             </div>
         </div>
     </div>
@@ -93,10 +93,10 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                    <input type="button" value="1" onclick="display(1)" class="number">
-                    <input type="button" value="2" onclick="display(2)" class="number">
-                    <input type="button" value="3" onclick="display(3)" class="number">
-                    <input type="button" value="x" onclick="display('*')" class="operator">
+                <button onclick="myFunction(this.innerText)">1</button>
+                <button onclick="myFunction(this.innerText)">2</button>
+                <button onclick="myFunction(this.innerText)">3</button>
+                <button onclick="myFunction(this.innerText)">*</button>
             </div>
         </div>
     </div>
@@ -107,25 +107,68 @@
     <div class ="container">
         <div class="row">
             <div class="col-3">
-                    <input type="button" value="0" onclick="display(0)" class="number">
-                    <input type="button" value="." onclick="display('.')" class="decimal">
-                    <input type="button" value="=" onclick="display('=')" class="equals">
-                    <input type="button" value="/" onclick="display('/')" class="operator">
+                <button class="long" onclick="myFunction(this.innerText)">0</button>
+                <button onclick="myFunction(this.innerText)">.</button>
+                <button onclick="myFunction(this.innerText)">/</button>
             </div>
         </div>
     </div>
 
-<!--CLEAR BUTTON
+<!-- FIFTH LINE CALCULATOR
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <div class ="container">
         <div class="row">
-            <div class="col-2">
-                        <input type="button" value="AC" onclick="clear()" class="clear">
+            <div class="col-3">
+                <button onclick="myFunction(this.innerText)" class ="long">AC</button>
+                <button onclick="myFunction(this.innerText)" class ="long">CE</button>
+
             </div>
         </div>
+    </div>
 
 
-</form>
+
+
+</div>
   </body>
 </html>
+
+<!--
+
+<div class="calculator">
+    <p id="title">FreeCodeCamp</p>
+    <p id="tagline">electronic calculator</p>
+    <input type="text" disabled="disabled" id="answer"/>
+    <div class="row">
+      <button class="ctrl">AC</button>
+      <button class="ctrl">CE</button>
+      <button>%</button>
+      <button>÷</button>
+    </div>
+    <div class="row">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>x</button>
+    </div>
+    <div class="row">
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+    </div>
+    <div class="row">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="tall">+</button>
+    </div>
+    <div class="row">
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
+
+-->

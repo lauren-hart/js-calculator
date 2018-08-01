@@ -16,6 +16,8 @@
         text-align: center;
     }
 
+    /* LAUREN'S CALCULATOR */
+
     header {
         margin: 5% 0 0 0;
         text-transform: uppercase;
@@ -25,14 +27,16 @@
         text-align: center;
     }
 
+    /* CALCULATOR LAYOUT */
+
     .calculator {
 
         border: 1px solid rgb(189, 183, 183);
         height: 100%;
-        width: 40%;
+        width: 30%;
         background: rgb(216, 228, 230);
         display: inline-block; 
-        margin: 5% 0;
+        margin: 8%;
         font-family: 'Ubuntu', sans-serif;
         text-align: center;
         border-radius: 5%;
@@ -42,63 +46,37 @@
         margin: 2% 0;
     }
 
- 
+    /* BUTTONS DESIGN */
 
-    input[type=button] {
+
+    button {
         background: rgb(10, 4, 66);
         color: white;
         padding: 2%;
         margin: 1% 0 0 0;
         font-size: 30px;
         width: 20%;
-        border-radius: 20%;
     }
 
-    input[type=button].clear {
-        width: 30%;
-        float: left;
-        margin: 3% 0 3% 7%;
-        background: rgb(77, 179, 153);
-    }
-
-
-    input[type=button].operator {
-        background: rgb(77, 179, 153);
-    }
-
-    input[type=button].equals {
-        background: rgb(77, 179, 153);
-    }
-
-    input[type=button].decimal {
-        background: rgb(77, 179, 153);
-    }
-
-    .number {
-        background: rgb(10, 4, 66);
+    .long {
+        background: rgb(26, 161, 161);
         color: white;
         padding: 2%;
         margin: 1% 0 0 0;
         font-size: 30px;
-        width: 20%;
-
+        width: 42%;
     }
+
 
 
 #displayScreen {
-    font-size: 40px;
-    width: 90%;
-    background: white;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 2%;
-    border-radius: 10%;
-    margin: 5%;
-    text-align: right;
-    
-}
+        font-size: 40px;
+        width: 90%;
+        background: white;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 0%;
+        text-align: right; 
+    }
 
-input[type=button]:hover {
-    background: grey;
 
-}
     
