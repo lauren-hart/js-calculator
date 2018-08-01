@@ -15,11 +15,49 @@ var temp = '';
 
 
 
+
+
 function myFunction (butPressed) {
+
+    var isNumber = parseInt(butPressed);
+
+
+    if (isNaN(isNumber) === false) {
+        document.getElementById("displayScreen").innerHTML = 
+        document.getElementById("displayScreen").innerHTML + butPressed;
     
-    document.getElementById("displayScreen").innerHTML = 
-    document.getElementById("displayScreen").innerHTML + butPressed;
+    } else if (butPressed === '+') {
+        console.log("this is an addition");
+    
+    } else if (butPressed === '-') {
+        console.log("this is a subtraction");
+    
+    } else if (butPressed === '*') {
+        console.log("this is a multiplication");
+    
+    } else if (butPressed === '/') {
+        console.log("this is a division");
+    
+    } else if (butPressed === '.') {
+        console.log("this is a decimal");
+    
+    } else if (butPressed === 'AC') {
+        console.log("this to clear all");
+    
+    } else if (butPressed === 'CE') {
+        console.log("this is to clear the last entry");
+    }
+
 }
+
+
+/*
+document.getElementById("displayScreen").innerHTML = 
+document.getElementById("displayScreen").innerHTML + butPressed; */
+
+
+
+
 
 
 
