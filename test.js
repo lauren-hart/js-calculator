@@ -18,10 +18,9 @@ var temp = '';
 function myFunction (butPressed) {
     
     document.getElementById("displayScreen").innerHTML = 
-    butPressed + document.getElementById("displayScreen").innerHTML;
-
-
+    document.getElementById("displayScreen").innerHTML + butPressed;
 }
+
 
 
 
