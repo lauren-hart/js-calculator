@@ -56,7 +56,6 @@ var len2 = document.getElementsByClassName("operator");
 
     for (var i = 0; i < len2.length; i++) {
         if (len2[i].innerHTML === val){ //To match it to val pressed
-            console.log(operator);
             var operator = val;
         }
     } 
@@ -132,15 +131,22 @@ var len2 = document.getElementsByClassName("operator");
         document.getElementById("displayScreen").innerHTML =
         val;
 
+        console.log(operator);
+
+        
+
         temp = '';
         entries.length = 0;
 
-    
-     }
+//STORE NEXT NUMBER AS A VARIABLE---------------------
 
-//SUBTRACTION -------------------------------------------
+    for (var i = 1; i < entries.length; i++) {
+        var nextNum = Number(entries[i+1]); }
+     
 
+//EQUALS -------------------------------------------
 
+    } 
 
 
 
