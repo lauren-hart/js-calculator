@@ -27,59 +27,126 @@ function start() {
 
  var temp = '';
  var total = 0;
-
-
+ var entries = [];
 
  //Calculator function
 
  function calculator (evt) {
-
 
 //This will pull the innerHTML from the button
 //that has been clicked
 
     val = evt.target.innerText;
 
-//This will convert a digit to a number
 
-    var len = document.getElementsByClassName("digit");
+//This will add a number to variable digit
+
+var len = document.getElementsByClassName("digit");
 
     for (var i = 0; i < len.length; i++) {
         if (len[i].innerHTML === val){ //To match it to val pressed
-            var val = parseInt(len[i].innerHTML);
+            var digit = val;
+            //console.log(digit);
         }
     } 
 
-//This will take the what is currently displayed on
-//display and append each subsequent button pressed
+//This will add an operator to variable operator
 
-    console.log(val);
+var len2 = document.getElementsByClassName("operator");
 
-    document.getElementById("displayScreen").innerHTML
-    = document.getElementById("displayScreen").innerHTML + val;
+    for (var i = 0; i < len2.length; i++) {
+        if (len2[i].innerHTML === val){ //To match it to val pressed
+            console.log(operator);
+            var operator = val;
+        }
+    } 
 
-//First we check if the value is a number or a decimal
-//If it is we append them to the string temp
 
-    if (!isNaN(val) || val === '.') {
-        var temp = document.getElementById("displayScreen").innerHTML;
-    } else if (val === 'AC') {
-        var temp = '';
-        var total = 0;
-        document.getElementById("displayScreen").innerHTML = 0;
-    } else if (val === '+') {
-        console.log("this is a plus");
+
+//CLEAR ALL-----------------------------------------
+
+    if (val === 'AC') {
+
+        //empty string
+        temp = '';
+
+        //empty array
+        for (var i = entries.length; i > 0; i--) {
+            entries.pop();
+        } 
+
+        //you could also do it by setting entries
+        //length to 0
+
+        //entries.length = 0;
+
+        document.getElementById("displayScreen").innerHTML =
+        0;
+
     }
 
-    console.log(temp);
+    //CLEAR LAST ENTRY-----------------------------------
 
-//You need to add an id or class or something so that
-//you can distinguish digits and then you can turn 
-//them into an integer
+    else if (val === 'CE') {
 
- 
-//Function to reset values back to zero
+        document.getElementById("displayScreen").innerHTML =
+        "HELP?";
+    }
+
+//If it is a digit (includes decimal), then keep adding
+//to the temp string. Push the temp to an array
+// display the temp string on the display
+
+     else if (val === digit) {
+
+        temp += digit;
+    
+        entries.push(val);
+        console.log(entries);
+
+        console.log(temp);
+
+        document.getElementById("displayScreen").innerHTML =
+        temp;
+
+     
+
+           
+// For plus you want to pop the last value in the array
+//entries and store it in a new variable - (lastVal)
+//Then clear array and string. 
+
+
+     
+
+//OPERATOR -------------------------------------------
+
+    } else if (val === operator) {
+
+    //Convert temp string to a number
+        var lastNumber = parseInt(temp);
+        console.log(lastNumber);
+
+    //To clear the screen of the string and display 
+    //The operator
+        document.getElementById("displayScreen").innerHTML =
+        val;
+
+        temp = '';
+        entries.length = 0;
+
+    
+     }
+
+//SUBTRACTION -------------------------------------------
+
+
+
+
+
 
 
 
 }
+
+
