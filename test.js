@@ -133,10 +133,13 @@ var len2 = document.getElementsByClassName("operator");
 
         console.log(operator);
 
+        entries.push(val);
+        console.log(entries);
+
+        
         
 
         temp = '';
-        entries.length = 0;
 
 //STORE NEXT NUMBER AS A VARIABLE---------------------
 
@@ -146,7 +149,25 @@ var len2 = document.getElementsByClassName("operator");
 
 //EQUALS -------------------------------------------
 
-    } 
+    } else if (val === '=') {
+
+        for (i = 0; i < entries.length; i++) {
+
+            if (entries[i] === '+') {
+               var x = entries.toString();
+               console.log(x.split('+'))
+
+               for(i = 0; i < x.length; i++) {
+                    document.getElementById("displayScreen").innerHTML = 
+                    ( parseInt(x[i]) + parseInt(x[i]) )
+               } 
+
+
+            }
+        }
+
+
+    }
 
 
 
