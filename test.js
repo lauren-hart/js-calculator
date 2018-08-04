@@ -1,4 +1,3 @@
-
 //When the DOM content has been loaded the start
 //function will run
 
@@ -175,5 +174,3 @@ var len2 = document.getElementsByClassName("operator");
 
 
 }
-
-
