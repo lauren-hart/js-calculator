@@ -40,14 +40,16 @@ function start() {
 
 //This will add a number to variable digit
 
-var len = document.getElementsByClassName("digit");
+var checkVal = document.getElementsByClassName("digit");
 
-    for (var i = 0; i < len.length; i++) {
-        if (len[i].innerHTML === val){ //To match it to val pressed
+    for (var i = 0; i < checkVal.length; i++) {
+        if (checkVal[i].innerHTML === val){ //To match it to val pressed
             var digit = val;
             //console.log(digit);
-        }
-    } 
+        } 
+ 
+    }
+    
 
 //This will add an operator to variable operator
 
